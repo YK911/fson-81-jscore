@@ -61,12 +61,10 @@
 //  - за допомогою function declaration
 //  - за допомогою arrow function
 //++++++++++++++++++ Рішення function declaration ++++++++++++++++++
-// function each(array, callback) {
-//
-// }
+// function each(array, callback) {}
 
 // function multiply(value) {
-//   return ;
+//   return;
 // }
 // const array = [3, 5, 6, 34, 8, 83, 12, 34];
 
@@ -120,7 +118,7 @@
 // const discountPremium = saveDiscount(50);
 // console.log(discountPremium(1000));
 
-import users from "./db.js";
+// import users from "./db.js";
 /**
   |============================
   | Завдання 1
