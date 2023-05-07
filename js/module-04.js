@@ -127,19 +127,23 @@ import users from "./db.js";
   |============================
 */
 // Отримати масив імен всіх користувачів (поле name).
-// console.log(getUserNames(usersData))
+// console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 //++++++++++++++++++ Рішення ++++++++++++++++++
-
+function getUserNames(users) {
+  return users.map((user) => user.name);
+}
 /**
   |============================
   | Завдання 2
   |============================
 */
 // Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
-// console.log(getUsersWithEyeColor(users, 'blue')); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
+console.log(getUsersWithEyeColor(users, "blue")); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
 //++++++++++++++++++ Рішення ++++++++++++++++++
-
+function getUsersWithEyeColor(users, eyeColor) {
+  return users.filter((user) => user.eyeColor === eyeColor);
+}
 /**
   |============================
   | Завдання 3
@@ -324,7 +328,16 @@ const courses = [
   },
   {
     name: "Intermediate JavaScript",
-    topics: ["VSCode", "NPM", "Bundlers", "Transpiling", "Git", "Promises", "AJAX", "GitHub"],
+    topics: [
+      "VSCode",
+      "NPM",
+      "Bundlers",
+      "Transpiling",
+      "Git",
+      "Promises",
+      "AJAX",
+      "GitHub",
+    ],
   },
 ];
 
